@@ -58,22 +58,6 @@ Description: Java(TM) Plug-in, Java SE 6
  This is a metapackage containing dependencies for running Java in 
  various browsers.
 
-Package: ia32-sun-java6-bin
-Section: non-free/java
-Architecture: amd64
-Depends: sun-java6-jre (>= ${source:Version}), ia32-libs, ${shlibs:Depends}, ${odbc:Depends}, ${misc:Depends}
-Recommends: ${shlibs:Recommends}, ia32-libs-gtk
-Description: Sun Java(TM) Runtime Environment (JRE) 6 (32-bit)
- The Sun Java Platform Standard Edition Runtime Environment (JRE) 6
- contains the Java virtual machine, runtime class libraries, and 
- Java application launcher that are necessary to run programs written 
- in the Java progamming language. It is not a development environment and
- doesn't contain development tools such as compilers or debuggers.
- For development tools, see the Java Development Kit JDK(TM) 6
- (package sun-java6-jdk).
- .
- This package contains architecture dependent files for ia32.
-
 Package: sun-java6-fonts
 Section: non-free/fonts
 Architecture: all

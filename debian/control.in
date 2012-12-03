@@ -58,22 +58,6 @@ Description: Java(TM) Plug-in, Java SE @RELEASE@
  This is a metapackage containing dependencies for running Java in 
  various browsers.
 
-Package: ia32-@basename@-bin
-Section: non-free/java
-Architecture: amd64
-Depends: @basename@-jre (>= ${source:Version}), ia32-libs, ${shlibs:Depends}, ${odbc:Depends}, ${misc:Depends}
-Recommends: ${shlibs:Recommends}, ia32-libs-gtk
-Description: @vendor@ Java(TM) Runtime Environment (JRE) @RELEASE@ (32-bit)
- The @vendor@ Java Platform Standard Edition Runtime Environment (JRE) @RELEASE@
- contains the Java virtual machine, runtime class libraries, and 
- Java application launcher that are necessary to run programs written 
- in the Java progamming language. It is not a development environment and
- doesn't contain development tools such as compilers or debuggers.
- For development tools, see the Java Development Kit JDK(TM) @RELEASE@
- (package @basename@-jdk).
- .
- This package contains architecture dependent files for ia32.
-
 Package: @basename@-fonts
 Section: non-free/fonts
 Architecture: all
