@@ -27,7 +27,7 @@ Description: Sun Java(TM) Runtime Environment (JRE) 6 (architecture independent 
 
 Package: sun-java6-bin
 Section: non-free/java
-Architecture: amd64 i386
+Architecture: amd64
 Depends: sun-java6-jre (>= ${source:Version}), ${odbc:Depends}, ${shlibs:Depends}, ${misc:Depends}
 Recommends: ${shlibs:Recommends}
 Suggests: binfmt-support
@@ -43,7 +43,7 @@ Description: Sun Java(TM) Runtime Environment (JRE) 6 (architecture dependent fi
  This package contains architecture dependent files.
 
 Package: sun-java6-plugin
-Architecture: amd64 i386
+Architecture: amd64
 Section: non-free/web
 Priority: optional
 Depends: ${shlibs:Depends}, ${misc:Depends}, sun-java6-bin (>= ${source:Version}), firefox | firefox-2 | iceweasel | mozilla-firefox | iceape-browser | mozilla-browser | epiphany-gecko | epiphany-webkit | epiphany-browser | galeon | midbrowser | konqueror | chromium-browser | midori | google-chrome
@@ -85,7 +85,7 @@ Description: Lucida TrueType fonts (from the Sun JRE)
  This package makes the fonts available to system.
 
 Package: sun-java6-jdk
-Architecture: amd64 i386
+Architecture: amd64
 Depends: sun-java6-bin (>= ${source:Version}), ${shlibs:Depends}, ${misc:Depends}
 Suggests: default-jdk-doc, sun-java6-source
 Provides: java-compiler, java2-compiler, java-sdk, java2-sdk, java5-sdk, java6-sdk
