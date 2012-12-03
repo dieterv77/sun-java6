@@ -38,7 +38,7 @@ jdirname	:= $(ia32_prefix)java-$(version)-$(VENDOR)-$(jdkversion).$(releng_ver)
 jdiralias	:= $(ia32_prefix)java-$(version)-$(VENDOR)
 srcdir		:= $(arch)-jdk
 bin_pattern	:= jdk-$(version)u$(releng_ver)-linux-%.bin
-all_archs	:= i586 x64
+all_archs	:= x64
 priority	:= 63
 
 basedir		:= $(TOP)/$(jdirname)
@@ -327,7 +327,7 @@ $(foreach a, $(all_archs), unpack-$(a)-stamp): unpack-%-stamp: $(bin_pattern)
 
 	set -e; \
 	for i in $$(find $*-jdk -name '*.pack'); do \
-	  i586-jdk/bin/unpack200 $$i \
+	  x64-jdk/bin/unpack200 $$i \
 		$$(dirname $$i)/$$(basename $$i .pack).jar; \
 	  rm -f $$i; \
 	done
